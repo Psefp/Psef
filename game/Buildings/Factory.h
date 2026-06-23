@@ -9,14 +9,13 @@ private:
       int proctionrate;
       int storage ;
       int  amount;
+      int posy;
+      int posx;
 public:
- Factory(); 
- 
+      Factory(int FactoryX, int FactoryY , int FactoryPopulation);
 
-
-
+      void calculateStorage();
+      void calculateTime();
 };
-
-
 
 #endif 
