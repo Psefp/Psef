@@ -11,18 +11,17 @@ private:
     int posx;
     int posy;
     int food;
-    int foodneed;
-    int homeday;
+    int foodNeed;
+    int homeDay;
 
 public:
     
     Home(int playerx , int playery);
 
-    // Evin yapacağı işler (Fonksiyonlar)
     void profiligeration(); // Nüfus dağıtma/çoğaltma işi
-    int getpopulation();    // Dışarıya nüfus bilgisini güvenle gönderme kapısı
+    int getpopulation();    // Dısarıya nüfus bilgisini güvenle gönderme fonksiyonu
     void time();
-    void need();
+    void calculateFoodConsumption();
 };
 
 #endif
